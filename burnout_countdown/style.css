@@ -1,0 +1,82 @@
+* {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-image: linear-gradient(to right, darkred, 	orangered)
+}
+
+.clock {
+    text-shadow: 4px 4px 8px gold;
+    color: orange;
+}
+
+.countdown img {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 30%;
+    width: 20%;
+    border-radius: 25%;
+    transition: 1s;
+}
+
+.countdown img:hover {
+    transform: scale(1.2);
+}
+
+.countdown {
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    width: 50%;
+    height: 550px;
+    background-color: black;
+    border-radius: 10%;
+}
+
+.divv {
+    width: 90%;
+    position: relative;
+}
+
+h2 {
+    color: orangered;
+    text-shadow: 4px 4px 8px orange;
+}
+
+@keyframes animation1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dayss {
+    opacity: 0;
+    animation: animation1 1s ease-in-out 0s 1 forwards ;
+}
+
+.hourss {
+    opacity: 0;
+    animation: animation1 1s ease-in-out 1s 1 forwards ;
+}
+
+.minutess {
+    opacity: 0;
+    animation: animation1 1s ease-in-out 2s 1 forwards ;
+}
+
+.secondss {
+    opacity: 0;
+    animation: animation1 1s ease-in-out 3s 1 forwards ;
+}
